@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/davisdavid/Documents/Dagshub%20projects/Mobile-Price-ML-Classification-Project/mlruns/1/90b44947bbc242aab0eee1bb26294d7b/artifacts
+end_time: 1668457604994
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 90b44947bbc242aab0eee1bb26294d7b
+run_uuid: 90b44947bbc242aab0eee1bb26294d7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1668457603255
+status: 3
+tags: []
+user_id: davisdavid

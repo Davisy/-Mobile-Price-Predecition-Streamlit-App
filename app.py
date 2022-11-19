@@ -95,14 +95,16 @@ wifi = my_form.selectbox("Has wifi or not", (0, 1), format_func=func)
 
 submit = my_form.form_submit_button(label="make prediction")
 
-# load the model and scaler
+# load the mlflow registered model and scaler
+mlflow_model_path = "mlruns/1/17ccd85b4c7e491bbdbcba58b5eafae1/artifacts/model/model.pkl"
 with open(
-        join(dirname(realpath(__file__)), "model/lg_classifier.pkl"),
+        join(dirname(realpath(__file__)), mlflow_model_path),
         "rb",
 ) as f:
     model = joblib.load(f)
 
-with open(join(dirname(realpath(__file__)), "model/mobile_price_scaler.pkl"), "rb") as f:
+scaler_path  = "model/mobile_price_scaler.pkl"
+with open(join(dirname(realpath(__file__)), scaler_path ), "rb") as f:
     scaler = joblib.load(f)
 
 # result dictionary

@@ -1,0 +1,29 @@
+artifact_path: model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.8.8
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.2
+mlflow_version: 1.29.0
+model_uuid: b049f8d108974992bbb7691960002350
+run_id: 889e9b0793f04b96b8438ad8e6561622
+signature:
+  inputs: '[{"name": "battery_power", "type": "double"}, {"name": "blue", "type":
+    "double"}, {"name": "clock_speed", "type": "double"}, {"name": "dual_sim", "type":
+    "double"}, {"name": "fc", "type": "double"}, {"name": "four_g", "type": "double"},
+    {"name": "int_memory", "type": "double"}, {"name": "m_dep", "type": "double"},
+    {"name": "mobile_wt", "type": "double"}, {"name": "n_cores", "type": "double"},
+    {"name": "pc", "type": "double"}, {"name": "px_height", "type": "double"}, {"name":
+    "px_width", "type": "double"}, {"name": "ram", "type": "double"}, {"name": "sc_h",
+    "type": "double"}, {"name": "sc_w", "type": "double"}, {"name": "talk_time", "type":
+    "double"}, {"name": "three_g", "type": "double"}, {"name": "touch_screen", "type":
+    "double"}, {"name": "wifi", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+utc_time_created: '2022-11-14 20:26:36.899936'
